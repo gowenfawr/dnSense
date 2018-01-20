@@ -4,4 +4,4 @@ In no particular order:
 * Log which resolver IP(s) being filled
 * Implement multi-threaded mode to simultaneously fill multiple resolvers
 * Add command line option to override default system resolvers
-
+* Probably should handle the various error conditions on DNS queries
