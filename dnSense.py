@@ -37,7 +37,7 @@ def cache_Filler(ip, names):
     while True:
         now = time.time()
         if now > names[0].expiry:
-            log('cache', 'namserver={} name={} expired={} now={}'.format(ip, names[0].name, dumb_Stamp(names[0].expiry), dumb_Stamp(now)))
+            log('cache', 'nameserver={} name={} expired={} now={}'.format(ip, names[0].name, dumb_Stamp(names[0].expiry), dumb_Stamp(now)))
             answers = dr.query(names[0].name)
             # Default to this, but tweak later
             ttl = time.time()+1
